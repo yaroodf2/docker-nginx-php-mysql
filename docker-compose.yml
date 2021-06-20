@@ -36,7 +36,7 @@ services:
             - php
             - mariadb
     php:
-        image: php:7.4-fpm
+        image: yaroodf/php-fpm:${PHP_VERSION}
         restart: always
         ports:
             - "9000:9000"
